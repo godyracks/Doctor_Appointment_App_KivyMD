@@ -1,0 +1,49 @@
+<RegisterScreen>:
+    name_input: name
+    email_input: email
+    password_input: password
+
+    MDBoxLayout:
+        orientation: "vertical"
+
+        spacing: "12dp"
+        padding: "24dp"
+        size_hint_y: None
+        height: self.minimum_height
+
+        MDTextField:
+            id: name
+            hint_text: "Name"
+            required: True
+
+        MDTextField:
+            id: email
+            hint_text: "Email"
+            required: True
+            input_type: "text"
+
+        MDTextField:
+            id: password
+            hint_text: "Password"
+            required: True
+            password: True
+
+        MDLabel:
+            id: message_label
+            size_hint_y: None
+            height: "50dp"
+            text: ""
+
+        MDBoxLayout:
+            orientation: "horizontal"
+            spacing: "12dp"
+            size_hint_y: None
+            height: "48dp"
+
+            MDRaisedButton:
+                text: "Back to Login"
+                on_press: root.go_to_login(self)
+
+            MDRaisedButton:
+                text: "Submit"
+                on_press: root.submit_form(self)

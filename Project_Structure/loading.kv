@@ -1,0 +1,32 @@
+<LoadingScreen>:
+    name: "loading"
+    MDFloatLayout:
+        md_bg_color:199/255,80/255,145/255,1
+
+        Image:
+            source:"assets/stetho.jpeg"
+            size_hint: .25, .25
+            pos_hint: {"center_x": .49, "center_y": .50}
+            canvas.before:
+                Color:
+                    rgb: 1,1,1,1
+                Ellipse:
+                    size: 130, 130
+                    pos: 110, 250
+        MDLabel:
+            text:"Online Doc"
+            pos_hint: {"center_x": .8, "center_y": .2}
+            haling:"center"
+            theme_text_color:"Custom"
+            text_color:1,1,1,1
+            font_size:"38sp"
+            font_name:"Barlow-Bold.ttf"
+
+        MDLabel:
+            text:"You doctor is only a click away!"
+            pos_hint: {"center_x": .8, "center_y": .15}
+            haling:"center"
+            theme_text_color:"Custom"
+            text_color:1,1,1,1
+            font_size:"13sp"
+            font_name:"PTSans-Italic.ttf"

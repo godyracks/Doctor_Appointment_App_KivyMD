@@ -1,0 +1,82 @@
+#:kivy 1.0
+<LoginScreen>:
+    name:"login"
+    MDFloatLayout:
+        id:"login_layout"
+        md_bg_color:1,1,1,1
+        MDIconButton:
+            icon:"account"
+            user_font_size:"35sp"
+            pos_hint:{ "center_y":.95}
+
+        Image:
+            source:"assets/stetho.jpeg"
+            size_hint: .36,.36
+            pos_hint:{"center_x":.22, "center_y": .8}
+
+        MDLabel:
+            text:"LOG IN"
+            font_size:"18dp"
+            font_name:"PTSans-BoldItalic.ttf"
+            pos_hint:{"center_x":.615, "center_y": .949}
+
+        MDLabel:
+            text:"LU Hospital"
+            font_size:"32sp"
+            font_name:"PTSans-BoldItalic.ttf"
+            pos_hint:{"center_x":.917, "center_y": .849}
+
+        MDLabel:
+            text:"Your Health, Our Concern!"
+            font_size:"18sp"
+            font_name:"PTSans-Regular.ttf"
+            color:11/255,156/255,81/255,1
+            pos_hint:{"center_x":.915, "center_y": .790}
+
+        MDTextField:
+            id: email_input
+            hint_text: "Enter your Email"
+            helper_text: ""
+            helper_text_mode: "persistent"
+            font_name:"PTSans-Regular.ttf"
+            pos_hint:{"center_x":.5, "center_y": .52}
+
+            size_hint_x: .85
+            line_color_focus:0,0,0,1
+
+        MDTextField:
+            id: password_input
+            hint_text: "Enter your Password"
+            helper_text: ""
+            helper_text_mode: "persistent"
+            font_name:"PTSans-Regular.ttf"
+            pos_hint:{"center_x":.5, "center_y": .42}
+
+            size_hint_x: .85
+            line_color_focus:0,0,0,1
+            password: True
+
+        MDTextButton:
+            text:"You don't have an account? Sign Up"
+            font_size:"9sp"
+            font_name:"PTSans-BoldItalic.ttf"
+            haling:"center"
+            color:199/255,80/255,80/255,1
+            pos_hint:{"center_x":.715, "center_y": .370}
+            on_release: root.on_signup_button_press()
+        MDFlatButton:
+            text:"Log In"
+            size_hint: .79, .08
+            font_name:"PTSans-Bold.ttf"
+            pos_hint:{"center_x":.50, "center_y": .25}
+            on_release: root.authenticate_user(email_input, password_input)
+
+            canvas.before:
+                Color:
+                    rgb:80/255,191/255,199/255,1
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [6]
+
+
