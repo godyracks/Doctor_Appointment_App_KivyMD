@@ -1,7 +1,7 @@
 # Laikipia University Doctor App (Kivy)
 
 Welcome to the Laikipia University Doctor App (Kivy) repository! This app is designed to facilitate easy appointment booking for patients with doctors. 
-
+It is a project in progress that will enable -upon completion- students to book hospital appointments in the school hospital
 ## Features
 
 - **User-friendly Interface**: The app offers a simple and intuitive interface for seamless navigation and appointment booking.
@@ -25,7 +25,7 @@ The Laikipia University Doctor App is designed to be scalable and allows for fut
 - **Patient Feedback and Ratings**: Adding a feedback system where patients can provide ratings and reviews about their experiences would contribute to maintaining a high standard of healthcare service.
 - **Doctor Profiles**: Detailed profiles of doctors are provided, including their qualifications, experience, and patient ratings, enabling informed decision-making.
 ## Screenshots
-
+Check the PDF with project documentation for screenshots
 ![Screenshot 1](checkpdf://screenshot1.png)
 ![Screenshot 2](checkpdf://screenshot2.png)
 ![Screenshot 3](checkpdf://screenshot3.png)
@@ -45,5 +45,5 @@ Feel free to explore the code, make modifications, and contribute to the project
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is open-source
 
