@@ -36,7 +36,7 @@ Please note that the above screenshots are for illustrative purposes only and ma
 
 To get started with the Laikipia University Doctor App (Kivy), follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/LaikipiaUniversityDoctorAppKivy.git`
+1. Clone the repository: `git clone https://github.com/GodyRacks/LaikipiaUniversityDoctorAppKivy.git`
 2. Open the project in Android Studio or your preferred IDE.
 3. Build and run the app on an emulator or physical device.
 
