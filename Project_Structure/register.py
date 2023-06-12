@@ -34,7 +34,7 @@ class RegisterScreen(Screen):
 
         # connect to the database and insert the new user
         conn = mysql.connector.connect(user='root',
-                                       password='godygaro66',
+                                       password='',
                                        host='localhost',
                                        database='doctorapp',
                                        port=3307)
