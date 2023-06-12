@@ -20,9 +20,9 @@ class LoginScreen(Screen):
         db = mysql.connector.connect(
             host="localhost",
             user="root",
-            password="godygaro66",
+            password=" ",
             database="doctorapp",
-            port=3307
+            port=3307  #use your own credentials
         )
 
         # create cursor
@@ -44,7 +44,7 @@ class LoginScreen(Screen):
             db = mysql.connector.connect(
                 host="localhost",
                 user="root",
-                password="godygaro66",
+                password="",
                 database="doctorapp",
                 port=3307
             )
